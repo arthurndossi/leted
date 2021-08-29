@@ -1,0 +1,115 @@
+{% extends "base.html" %}
+{% block content %}
+    <!-- start page-title -->
+        <section class="page-title">
+            <div class="container">
+                <div class="row">
+                    <div class="col col-xs-12">
+                        <h2>Contact</h2>
+                    </div>
+                </div> <!-- end row -->
+            </div> <!-- end container -->
+        </section>
+        <!-- end page-title -->
+
+
+        <!-- start contact-section -->
+        <section class="contact-section contact-section-s2 section-padding">
+            <div class="container">
+                <div class="row">
+                    <div class="col col-xs-12">
+                        <div class="section-title-s5">
+                            <span>Contact</span>
+                            <h2>We’d Love to Here From You!</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col col-lg-8 col-lg-offset-2">
+                        <div class="content-area">
+                            <p>Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam</p>
+                            <div class="contact-form">
+                                <form method="post" class="contact-validation-active" id="contact-form-main">
+                                    <div>
+                                        <input type="text" class="form-control" name="name" id="name" placeholder="Name*">
+                                    </div>
+                                    <div>
+                                        <input type="email" class="form-control" name="email" id="email" placeholder="Email*">
+                                    </div>
+                                    <div>
+                                        <input type="text" class="form-control" name="phone" id="phone" placeholder="Phone*">
+                                    </div>
+{#                                    <div>#}
+{#                                        <select name="subject" class="form-control">#}
+{#                                            <option disabled="disabled" selected>Contact subject</option>#}
+{#                                            <option>Subject 1</option>#}
+{#                                            <option>Subject 2</option>#}
+{#                                            <option>Subject 3</option>#}
+{#                                        </select>#}
+{#                                    </div>#}
+                                    <div class="fullwidth">
+                                        <textarea class="form-control" name="note"  id="note" placeholder="Case Description..."></textarea>
+                                    </div>
+                                    <div class="submit-area">
+                                        <button type="submit" class="theme-btn submit-btn">Submit Now</button>
+                                        <div id="loader">
+                                            <i class="ti-reload"></i>
+                                        </div>
+                                    </div>
+                                    <div class="clearfix error-handling-messages">
+                                        <div id="success">Thank you</div>
+                                        <div id="error"> Error occurred while sending email. Please try again later. </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- end container -->
+        </section>
+        <!-- end contact-section -->
+
+        <!-- start contact-info-section -->
+        <section class="contact-info-section section-padding">
+            <div class="container">
+                <div class="row">
+                    <div class="col col-xs-12">
+                        <div class="contact-info clearfix">
+                            <div>
+                                <div class="icon">
+                                    <i class="ti-email"></i>
+                                </div>
+                                <h5>Email</h5>
+                                <p>help@technology-driver.co.tz <br>admin@technology-driver.co.tz</p>
+                            </div>
+                            <div>
+                                <div class="icon">
+                                    <i class="ti-headphone-alt"></i>
+                                </div>
+                                <h5>Phone</h5>
+                                <p>+255 717 913 064 <br>+255 710 022 028</p>
+                            </div>
+                            <div>
+                                <div class="icon">
+                                    <i class="ti-location-pin"></i>
+                                </div>
+                                <h5>Address</h5>
+                                <p>24/1 house no, Makumbusho <br>Dar es salaam, Tanzania</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end contact-info-section -->
+
+
+        <!-- start contact-map-section -->
+{#        <section class="contact-map-section">#}
+{#            <h2 class="hidden">Contact map</h2>#}
+{#            <div class="contact-map">#}
+{#                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d193595.9147703055!2d-74.11976314309273!3d40.69740344223377!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew+York%2C+NY%2C+USA!5e0!3m2!1sen!2sbd!4v1547528325671" allowfullscreen></iframe>#}
+{#            </div>#}
+{#        </section>#}
+        <!-- end contact-map-section -->
+{% endblock %}

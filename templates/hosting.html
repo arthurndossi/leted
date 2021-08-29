@@ -1,0 +1,103 @@
+{% extends "base.html" %}
+{% block content %}
+    <!-- start page-title -->
+    <section class="page-title">
+        <div class="container">
+            <div class="row">
+                <div class="col col-xs-12">
+                    <h2>Web Hosting</h2>
+                </div>
+            </div> <!-- end row -->
+        </div> <!-- end container -->
+    </section>
+    <!-- end page-title -->
+
+
+    <!-- start service-single-section -->
+    <section class="service-single-section section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col col-md-9 col-md-push-3">
+                    <div class="service-single-content">
+                        <div class="service-single-img">
+                            <img src="/static/images/service-single/img-1.jpg" alt>
+                        </div>
+                        <h2>Web Hosting</h2>
+                        <p>Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tel</p>
+                        <blockquote>
+                            <p>Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc,</p>
+                            <span>-Jhon smith</span>
+                        </blockquote>
+                        <div class="benefit clearfix">
+                            <div class="details">
+                                <h3>System Benefits</h3>
+                                <ul>
+                                    <li><i class="ti-arrow-circle-right"></i> Donec vitae sapien ut libero venenatis faucibus</li>
+                                    <li><i class="ti-arrow-circle-right"></i> Etiam sit amet orci eget eros faucibus tincidunt</li>
+                                    <li><i class="ti-arrow-circle-right"></i> Leo eget bibendum sodales, augue velit cursus nunc,</li>
+                                </ul>
+                                <p>Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus</p>
+                            </div>
+                            <div class="img-holder">
+                                <img src="/static/images/service-single/benefit-pic.jpg" alt>
+                            </div>
+                        </div>
+                        <h3>Research</h3>
+                        <p>Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus</p>
+                        <div class="service-single-tab">
+                            <ul class="nav">
+                                <li class="active">
+                                    <a href="#precautions" data-toggle="tab">Precautions</a>
+                                </li>
+                                <li>
+                                    <a href="#intelligence" data-toggle="tab">Intelligence</a>
+                                </li>
+                                <li>
+                                    <a href="#specializations" data-toggle="tab">Specializations</a>
+                                </li>
+                            </ul>
+
+                            <div class="tab-content">
+                                <div class="tab-pane fade in active" id="precautions">
+                                    <p>Blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc,Sed consequat, leo eget bibendum sodales, augue velit cursus nunc,</p>
+                                </div>
+                                <div class="tab-pane fade" id="intelligence">
+                                    <p>Blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc,Sed consequat, leo eget bibendum sodales, augue velit cursus nunc,</p>
+                                </div>
+                                <div class="tab-pane fade" id="specializations">
+                                    <p>Blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc,Sed consequat, leo eget bibendum sodales, augue velit cursus nunc,</p>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="#" class="theme-btn">Get the service</a>
+                    </div>
+                </div>
+                <div class="col col-md-3 col-md-pull-9">
+                    <div class="service-sidebar">
+                        <div class="widget service-list-widget">
+                            <ul>
+                                <li><a href="{% url 'materials' %}">Building Materials</a></li>
+                                <li><a href="{% url 'web-development' %}">Web Designing & Development</a></li>
+                                <li class="current"><a href="{% url 'hosting' %}">Web Hosting</a></li>
+                                <li><a href="{% url 'app-development' %}">Mobile App Development</a></li>
+                                <li><a href="{% url 'hardware' %}">IT Hardware & Peripherals Supply</a></li>
+                            </ul>
+                        </div>
+                        <div class="widget download-widget">
+                            <ul>
+                                <li><a href="#"><i class="ti-zip"></i>Company presentation</a></li>
+                            </ul>
+                        </div>
+                        <div class="widget contact-widget">
+                            <div>
+                                <h5>We are IT Service <span>Experts</span></h5>
+                                <a href="#">Contact with us</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- end row -->
+        </div> <!-- end container -->
+    </section>
+    <!-- end service-single-section -->
+{% endblock %}

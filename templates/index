@@ -1,0 +1,232 @@
+{% extends "base.html" %}
+{% block content %}
+    <!-- start of hero -->
+    <section class="hero-slider hero-style-1">
+        <div class="hero-container">
+            <div class="hero-wrapper">
+                <div class="hero-slide">
+                    <div class="slide-inner slide-bg-image" data-background="/static/images/slider/slide-1.jpg">
+                        <div class="container">
+                            <div data-swiper-parallax="300" class="slide-title">
+                                <h2>We are IT Services Consulting Firm</h2>
+                            </div>
+                            <div data-swiper-parallax="400" class="slide-text">
+                                <p>We offer a range of IT services. Let us procure building materials on your behalf. </p>
+                            </div>
+                            <div class="clearfix"></div>
+                            <div data-swiper-parallax="500" class="slide-btns">
+{#                                    <a href="#" class="vid-btn"><i class="fi flaticon-play-button"><span>Intro Video <br>Watch</span></i></a>#}
+                                <a href="{% url 'contact' %}" class="theme-btn">Contact us</a>
+                            </div>
+                        </div>
+                    </div> <!-- end slide-inner -->
+                </div> <!-- end swiper-slide -->
+            </div>
+            <!-- end swiper-wrapper -->
+        </div>
+    </section>
+    <!-- end of hero slider -->
+    <!-- start feature-about-section -->
+    <section id="about" class="feature-about-section section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col col-md-6">
+                    <div class="feature-grid clearfix">
+                        <div class="grid">
+                            <div class="icon">
+                                <i class="fi flaticon-computer"></i>
+                            </div>
+                            <h3>IT industry</h3>
+                        </div>
+{#                            <div class="grid">#}
+{#                                <div class="icon">#}
+{#                                    <i class="fi flaticon-customer-service"></i>#}
+{#                                </div>#}
+{#                                <h3>Fast Services</h3>#}
+{#                            </div>#}
+                        <div class="grid">
+                            <div class="icon">
+                                <i class="fi flaticon-bag"></i>
+                            </div>
+                            <h3>Building Materials</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col col-md-6">
+                    <div class="about-area">
+                        <div class="section-title-s2">
+                            <span>About us</span>
+                            <h2>Take a quick tour of <br>about us</h2>
+                        </div>
+                        <div class="details">
+                            <p>Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinarDuis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc, Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante.</p>
+                            <h5>Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus</h5>
+                            <ul>
+                                <li>Phone: +255 717 913 064</li>
+                                <li>Email: help@technology-driver.co.tz</li>
+                            </ul>
+                            <div class="btns">
+                                <a href="{% url 'contact' %}" class="theme-btn">Get In Touch</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> <!-- end container -->
+    </section>
+    <!-- end feature-about-section -->
+
+
+    <!-- start services-section -->
+    <section id="services" class="services-section section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col col-xs-12">
+                    <div class="section-title">
+                        <span>Our services</span>
+                        <h2>Services We Provide</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col col-xs-12">
+                    <div class="services-grid clearfix">
+                        <div class="grid">
+                            <div class="icon">
+                                <i class="fi flaticon-bag"></i>
+                            </div>
+                            <h4><a href="{% url 'materials' %}">Building Materials</a></h4>
+                            <p>Hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis </p>
+                        </div>
+                        <div class="grid">
+                            <div class="icon">
+                                <i class="fi flaticon-cloud-computing"></i>
+                            </div>
+                            <h4><a href="{% url 'ai' %}">Artificial Intelligence</a></h4>
+                            <p>Hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis </p>
+                        </div>
+                        <div class="grid">
+                            <div class="icon">
+                                <i class="fi flaticon-client"></i>
+                            </div>
+                            <h4><a href="{% url 'design' %}">UI/UX Design & Analysis</a></h4>
+                            <p>Hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis </p>
+                        </div>
+                        <div class="grid">
+                            <div class="icon">
+                                <i class="fi flaticon-database"></i>
+                            </div>
+                            <h4><a href="{% url 'website' %}">Website Development & Hosting</a></h4>
+                            <p>Hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis </p>
+                        </div>
+                        <div class="grid">
+                            <div class="icon">
+                                <i class="fi flaticon-security"></i>
+                            </div>
+                            <h4><a href="{% url 'system' %}">System & App Management</a></h4>
+                            <p>Hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis </p>
+                        </div>
+                        <div class="grid">
+                            <div class="icon">
+                                <i class="fi flaticon-fraud"></i>
+                            </div>
+                            <h4><a href="{% url 'testing' %}">Software Testing</a></h4>
+                            <p>Hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis </p>
+                        </div>
+                        <div class="grid">
+                            <div class="icon">
+                                <i class="fi flaticon-computer"></i>
+                            </div>
+                            <h4><a href="{% url 'hardware' %}">Computer Hardware & Networking</a></h4>
+                            <p>Hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+{#                <div class="row">#}
+{#                    <div class="col col-xs-12">#}
+{#                        <div class="all-service">#}
+{#                            <p>If you wnat to know more details about services Please check <a href="#">All Services</a></p>#}
+{#                        </div>#}
+{#                    </div>#}
+{#                </div>#}
+        </div> <!-- end container -->
+    </section>
+    <!-- end services-section -->
+
+    <!-- start our-skill-section -->
+{#        <section class="our-skill-section section-padding">#}
+{#            <div class="container">#}
+{#                <div class="row">#}
+{#                    <div class="col col-md-7 col-md-offset-5">#}
+{#                        <div class="section-title-s4">#}
+{#                            <span>Our skills</span>#}
+{#                            <h2>Trusted company in IT services and support</h2>#}
+{#                        </div>#}
+{#                        <div class="details">#}
+{#                            <p>Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel</p>#}
+{#                            <div class="skills">#}
+{#                                <div class="skill">#}
+{#                                    <h6>IT solution</h6>#}
+{#                                    <div class="progress">#}
+{#                                        <div class="progress-bar" data-percent="85"></div>#}
+{#                                    </div>#}
+{#                                </div>#}
+{#                                <div class="skill">#}
+{#                                    <h6>Cyber security</h6>#}
+{#                                    <div class="progress">#}
+{#                                        <div class="progress-bar" data-percent="95"></div>#}
+{#                                    </div>#}
+{#                                </div>#}
+{#                                <div class="skill">#}
+{#                                    <h6>Saticfaction</h6>#}
+{#                                    <div class="progress">#}
+{#                                        <div class="progress-bar" data-percent="92"></div>#}
+{#                                    </div>#}
+{#                                </div>#}
+{#                            </div>#}
+{#                        </div>#}
+{#                    </div>#}
+{#                </div>#}
+{#            </div> <!-- end container -->#}
+{#        </section>#}
+    <!-- end our-skill-section -->
+
+    <!-- start cta-section-s2 -->
+    <section class="cta-section-s2">
+        <div class="container">
+            <div class="row">
+                <div class="col col-xs-12">
+                    <div class="cta-content">
+                        <h4>If you have any query about us and our services, then feel free to contact us</h4>
+                        <a href="{% url 'contact' %}" class="theme-btn-s2">Contact us</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end cta-section-s2 -->
+
+    <!-- start news-letter-section -->
+    <section class="news-letter-section">
+        <div class="container">
+            <div class="row">
+                <div class="col col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">
+                    <div class="newsletter">
+                        <h3>Email Newsletter</h3>
+                        <p>Aenean leo ligula porttitor eu consequat vitae eleifend ac enim. Aliquam lorem ante dapibus in viverra quiss consequat vitae</p>
+                        <div class="newsletter-form">
+                            <form>
+                                <div>
+                                    <input type="text" class="form-control">
+                                    <button type="submit">Subscribe</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> <!-- end container -->
+    </section>
+    <!-- end news-letter-section -->
+{% endblock %}

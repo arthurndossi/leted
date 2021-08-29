@@ -1,0 +1,22 @@
+{% extends 'base2.html' %}
+{% block left %}
+{#    <div id="titles">#}
+        <h1 class="animate__animated head-1 animate__fadeIn"><span class="upper">Le</span>ading</h1>
+        <h1 class="animate__animated head-2 animate__fadeIn"><span class="upper">Te</span>chnology</h1>
+        <h1 class="animate__animated head-3 animate__fadeIn"><span class="upper">D</span>river</h1>
+{#    </div>#}
+{% endblock %}
+
+{% block right %}
+    <h3 class="animate__animated content-1 animate__fadeInRight"><a href="{% url 'web-development' %}">Web Designing & Development</a></h3>
+    <h3 class="animate__animated content-2 animate__fadeInRight"><a href="{% url 'hosting' %}">Web Hosting</a></h3>
+    <h3 class="animate__animated content-3 animate__fadeInRight"><a href="{% url 'app-development' %}">Mobile App Development</a></h3>
+    <h3 class="animate__animated content-4 animate__fadeInRight"><a href="{% url 'hardware' %}">IT Hardware & Peripherals Supply</a></h3>
+{#    <h3 class="animate__animated content-1 animate__fadeInRight"><a href="{% url 'materials' %}">Building Materials</a></h3>#}
+{#    <h3 class="animate__animated content-2 animate__fadeInRight"><a href="{% url 'ai' %}">Artificial Intelligence</a></h3>#}
+{#    <h3 class="animate__animated content-3 animate__fadeInRight"><a href="{% url 'design' %}">UI/UX Design & Analysis</a></h3>#}
+{#    <h3 class="animate__animated content-4 animate__fadeInRight"><a href="{% url 'website' %}">Website Development & Hosting</a></h3>#}
+{#    <h3 class="animate__animated content-5 animate__fadeInRight"><a href="{% url 'system' %}">System & App Management</a></h3>#}
+{#    <h3 class="animate__animated content-6 animate__fadeInRight"><a href="{% url 'testing' %}">Software Testing</a></h3>#}
+{#    <h3 class="animate__animated content-7 animate__fadeInRight"><a href="{% url 'hardware' %}">Computer Hardware & Networking</a></h3>#}
+{% endblock %}
