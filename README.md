@@ -1,2 +1,2 @@
-# leted
+# LeTeD
 Leading Technology Driver website
