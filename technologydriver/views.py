@@ -1,7 +1,12 @@
+from django.http import HttpResponseRedirect
 from django.shortcuts import render
+from django.core.mail import send_mail
 
 
 # Create your views here.
+from django.template import RequestContext
+
+
 def index(request):
     return render(request, 'index.html', {})
 
@@ -44,3 +49,20 @@ def hosting(request):
 
 def terms(request):
     return render(request, "terms-conditions.html", {})
+
+
+def send_email(request):
+    if request.method == 'POST':
+        name = request.POST['name']
+        sender = request.POST['email']
+        phone = request.POST['phone']
+        subject = request.POST['subject']
+        note = request.POST['note']
+        recipient = ['info@leted.co.tz']
+
+        message = "Name: " + name + "\n"
+        message += "Phone number: " + phone + "\n"
+        message += "Message: " + note + "\n"
+
+        send_mail(subject, message, sender, recipient, fail_silently=False)
+    return render(request, 'index.html', {})

@@ -13,4 +13,5 @@ urlpatterns = [
     re_path(r'^app-development$', views.app_development, name='app-development'),
     re_path(r'^computer-hardware-networking$', views.computer_hardware_networking, name='hardware'),
     re_path(r'^terms&conditions$', views.terms, name='terms'),
+    re_path(r'^send-mail$', views.send_email, name='send-mail'),
 ]

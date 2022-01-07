@@ -681,6 +681,14 @@
 
     });
 
+    $(".open-modal").click(function(e){
+        e.preventDefault();
+        $("#basicModal").data({'title':$(this).text(), 'content':$(this).closest(".grid").find("p").html()}).modal("toggle", $(this));
+    });
 
+    $("#basicModal").on("shown.bs.modal", function(e){
+        $(".modal-title").text($(this).data("title"));
+        $(".modal-body h4").text($(this).data("content"));
+    })
 
 })(window.jQuery);

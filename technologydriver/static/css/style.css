@@ -8110,3 +8110,17 @@ img {
     border-left: 1px solid #1166f3;
     padding-left: 15px;
 }
+
+.service-grid-p {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+
+.service-grid-p-last {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
