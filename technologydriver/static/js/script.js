@@ -691,4 +691,15 @@
         $(".modal-body h4").text($(this).data("content"));
     })
 
+    $("#readMore").click(function(event) {
+        event.preventDefault();
+        $(this).toggle();
+        $("#more").toggle();
+    });
+    $("#showLess").click(function(event) {
+        event.preventDefault();
+        $("#readMore").toggle();
+        $("#more").toggle();
+    });
+
 })(window.jQuery);

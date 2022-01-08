@@ -8077,8 +8077,11 @@ img {
 
 /*# sourceMappingURL=style.css.map */
 
+#more {
+  display: none;
+}
 
-.theme-btn:after, .theme-btn-s2:after {
+.theme-btn-s2:after {
     content: "\01f4de";
 }
 
