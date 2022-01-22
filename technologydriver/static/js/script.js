@@ -694,12 +694,11 @@
     $("#readMore").click(function(event) {
         event.preventDefault();
         $(this).toggle();
-        $("#more").toggle();
+        $("#more").slideToggle(700);
     });
     $("#showLess").click(function(event) {
         event.preventDefault();
-        $("#readMore").toggle();
-        $("#more").toggle();
+        $("#more").slideToggle(700, function () { $("#readMore").toggle(); });
     });
 
 })(window.jQuery);
